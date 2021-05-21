@@ -4,7 +4,10 @@
 
 import Logo from "./img/Logo.svg";
 import TextClock from "./img/TextClock.svg";
+import TempGP from "./img/TempGamePlay.svg";
+import DogeFarming from './img/DogeFarming.svg';
 import "./App.css";
+import Card from "./Card"
 
 function App() {
   return (
@@ -27,7 +30,8 @@ function App() {
         </div>
         <div id="mainstory">
           <div id="clock">
-            <img id="textclock" alt="the main story" src={TextClock} />
+            {/* <img id="textclock" alt="the main story" src={TextClock} /> */}
+            <p id="textclock">THE MAIN STORY</p>
           </div>
           <div id="paragraph2">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -36,7 +40,20 @@ function App() {
             labore et dolore magna aliqua.
           </div>
         </div>
-        <div id="gameplay"></div>
+        <div id="gameplay">
+
+          <div id="gameplay-left">
+            <p id="gameplay-title">GAMEPLAY</p>
+            <p id="gameplay-subtitle">Many play. Such fascinate!</p>
+            <p id="gameplay-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <Card id='farm' linkimg={TempGP} title_='Doge Farming' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' linklearnmore='google.com' />
+            <Card id='farm' linkimg={TempGP} title_='Doge Evolving' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' linklearnmore='google.com' />
+          </div>
+          <div id="gameplay-right">
+            <Card id='farm' linkimg={TempGP} title_='Doge Socializing' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' linklearnmore='google.com' />
+            <Card id='farm' linkimg={TempGP} title_='Doge Fighting' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' linklearnmore='google.com' />
+          </div>
+        </div>
         <div id="dogeagent"></div>
       </div>
     </div>

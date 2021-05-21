@@ -1,0 +1,31 @@
+.card {
+  width: 37.5rem;
+  z-index: 100;
+  margin: 1rem 1rem;
+  display: flex;
+  justify-content: right;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.card-title {
+  font-family: WesternBangBang;
+  font-size: 1.5rem;
+  text-align: left;
+  margin: 0.75rem;
+  align-self: flex-start;
+}
+
+.card-description {
+  text-align: left;
+  margin-left: 0.75rem;
+  padding: 0rem;
+}
+
+.card-link:link {
+  margin-right: 1rem;
+  padding: 0rem;
+  font-size: 1rem;
+  color: #341F30;
+  text-decoration: none;
+}

@@ -1,3 +1,10 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@500&family=Roboto&display=swap');
+@font-face {
+  font-family: 'WesternBangBang';
+  src: local('Western Bang Bang'), url('./fonts/Western Bang Bang.woff') format('woff');
+}
+
 .App {
   text-align: center;
   width: 100%;
@@ -6,8 +13,11 @@
   justify-content: center;
   align-items: center;
   background: #271c25;
-
+  color: #341F30, 100%;
   /* margin: 0 auto; */
+  
+  font-family: Bai Jamjuree;
+  font-style: normal;
 }
 
 #wrap {
@@ -45,8 +55,6 @@
 }
 #paragraph1 {
   width: 30rem;
-  font-family: Bai Jamjuree;
-  font-style: normal;
   font-weight: bolder;
   font-size: 1.2rem;
   line-height: 1.5rem;
@@ -64,22 +72,52 @@
 #clock {
   background-image: url("./img/Clock.svg");
   background-size: cover;
-  width: 28rem;
+  width: 28.5rem;
   height: 34rem;
   margin-top: 1rem;
 }
 #textclock {
-  margin-top: 1rem;
+  margin-top: 1rem;  
+  font-family: WesternBangBang;
+  font-size: 4rem;
+  text-align: right;
 }
 #paragraph2 {
   width: 28rem;
-  font-family: Bai Jamjuree;
-  font-style: normal;
   font-weight: bold;
   font-size: 1.2rem;
   line-height: 1.5rem;
   text-align: left;
   padding-right: 8rem;
+}
+
+#gameplay{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+#gameplay-title {
+  margin-top: 1rem;  
+  margin-bottom: 0rem;  
+  margin-left: 2rem; 
+  font-family: WesternBangBang;
+  font-size: 4rem;
+  text-align: left;
+}
+#gameplay-subtitle {
+  margin: 1rem 0rem 1.5rem 2rem; 
+  font-size: 1.5rem;
+  text-align: left;
+}
+#gameplay-description {
+  margin: 1.5rem 2rem; 
+  font-size: 1rem;
+  text-align: left;
+}
+
+#dogeagent{
+  background-color: #341F30, 100%;
 }
 
 #menubg {
@@ -91,6 +129,8 @@
   position: fixed;
   top: 0px;
 }
+
+
 /*
 #banner {
   margin-top: 80px;
